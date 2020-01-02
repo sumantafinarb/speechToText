@@ -2,13 +2,14 @@ from __future__ import division
 
 import re
 import sys
-    from googletrans import Translator
+from googletrans import Translator
 from google.cloud import speech
 from google.cloud.speech import enums
 from google.cloud.speech import types
 import pyaudio
 from six.moves import queue
 import os
+#application credentials make sure to keep the credentials in project root 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="api-key.json"
 # Audio recording parameters
 RATE = 16000
